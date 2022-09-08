@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 export default function TextForm(props) {
   const handleUpClick = () => {
     console.log("Upparcase was clicked" + text); //optional
@@ -28,6 +29,7 @@ export default function TextForm(props) {
   // setText("new text"); correct way to change the state
   return (
     <>
+      
       <div className="container" style={{color:props.mode==='dark'?'white':'#042743'}}>
         <h1>{props.heading}</h1>
         <div className="mb-3">
@@ -61,6 +63,7 @@ export default function TextForm(props) {
         <h2>Preview</h2>
         <p>{text.length>0?text:"Enter something in the textbox above to preview here"}</p>
       </div>
+      
     </>
   );
 }
